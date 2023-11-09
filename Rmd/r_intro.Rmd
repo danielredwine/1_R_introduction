@@ -72,9 +72,69 @@ knitr::include_graphics("../png/rstudio_download.png")
 
 # Getting Familiar with RStudio
 
+
 ## RStudio Interface
 
+<li>For working with R we will use RStudio.</li>
+<li>Make sure to launch RStudio instead of R to begin.</li>
+<li>The RStudio interface can be seen below.</li><br>
+
 ```{r interface, message=FALSE, warning=FALSE, echo=FALSE, fig.show = "hold", out.width = "100%", fig.align = "center"}
+knitr::include_graphics("../png/rstudio_interface.png")
+```
+
+## Scripts
+
+<li>A script is simply a text file which contains a sequence of commands for R to perform.</li>
+<li>Scripts must be run for R to perform desired tasks.</li>
+<li>When ran, commands from the script are transferred to the command line in the console where commands will be performed.</li>
+<li>Any text preceded by a # will not be transferred to the command line.</li>
+<li>Code in a script is read in sequence, order is important!</li><br>
+
+```{r scripts, echo=FALSE, message=FALSE, warning=FALSE, fig.show = "hold", out.width = "100%", fig.align = "center"}
+knitr::include_graphics("../png/script.png")
 
 ```
 
+## Console
+
+<li>The console is where commands in R are executed and results are shown.</li>
+<li>Commands can be typed directly into the console in the command line, but are more frequently ran as scripts.</li>
+<li>Some results such as objects and plots are not shown in the console</li>
+<li>If a script is not written correctly, the error will show up in the console below the command that could not be executed.</li><br>
+
+```{r console, echo=FALSE, message=FALSE, warning=FALSE, fig.show = "hold", out.width = "100%", fig.align = "center"}
+knitr::include_graphics("../png/console.png")
+```
+## Environment
+
+<li>Objects (functions, variables, tables, graphs) which are created are shown in the environment.</li>
+<li>For our purposes we will generally not save the environment from one session to another.</li>
+<li>The broom symbol at the top of the pane clears the environment</li>
+<li>Objects are created with this notation in a script object_name <- command()</li><br>
+
+```{r environment, echo=FALSE, message=FALSE, warning=FALSE, fig.show = "hold", out.width = "100%", fig.align = "center"}
+knitr::include_graphics("../png/environment.png")
+```
+
+## Files and Plots
+
+<li>The bottom right pane is where you can view plots and files</li>
+<li>Looking at the file pathway in the bottom right can be useful in setting up working directories or understanding file pathways in your computer.</li>
+<li>Graphs which are plotted that are not saved as objects will show up in plots.</li><br>
+
+```{r files and plots, echo=FALSE, message=FALSE, warning=FALSE, fig.show = "hold", out.width = "50%", fig.align = "default"}
+knitr::include_graphics("../png/files.png")
+knitr::include_graphics("../png/plot.png")
+```
+
+# Packages
+
+<li>Packages are collections of functions created by other R users to add functionality to R.</li>
+<li>Packages are stored in libraries.</li>
+<li>Packages must be installed before use.</li>
+<li>Each script must load the required packages to complete that script using library() and other commands.</li>
+<li>We'll cover more about packages once we begin using R.</li>
+
+
+# Summary
